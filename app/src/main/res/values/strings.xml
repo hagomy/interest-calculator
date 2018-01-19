@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Calculator</string>
+
+    <string name="switch_on">정기예금</string>
+    <string name="switch_off">정기적금</string>
+    <string name="price">금액</string>
+    <string name="won">원</string>
+    <string name="rate">이율</string>
+    <string name="per">%</string>
+    <string name="period">기간</string>
+    <string name="month">개월</string>
+    <string name="cal">계산</string>
 </resources>

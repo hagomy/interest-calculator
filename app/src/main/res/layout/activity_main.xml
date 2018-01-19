@@ -10,23 +10,23 @@
 
     <LinearLayout
         android:orientation="horizontal"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=" 금액 " />
-        <EditText
-            android:id="@+id/et_main_won"
-            android:layout_width="60dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="number" />
+            android:text="@string/switch_off"/>
+        <Switch
+            android:id="@+id/sw_type"
+            style="@style/MyTextView"
+            android:textOn="@string/switch_on"
+            android:textOff="@string/switch_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="원" />
+            android:text="@string/switch_on"/>
     </LinearLayout>
 
     <LinearLayout
@@ -36,18 +36,40 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=" 이율 " />
+            style="@style/MyTextView"
+            android:text="@string/price"
+            tools:textColor="@color/colorAccent"/>
+        <EditText
+            android:id="@+id/et_main_won"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/won" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rate"
+            style="@style/MyTextView"/>
         <EditText
             android:id="@+id/et_main_per"
             android:layout_width="60dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:ems="10"
             android:inputType="numberDecimal" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="%" />
+            android:text="@string/per" />
     </LinearLayout>
 
     <LinearLayout
@@ -57,22 +79,23 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=" 기간 " />
+            android:text="@string/period"
+            style="@style/MyTextView" />
         <EditText
             android:id="@+id/et_main_month"
             android:layout_width="60dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:ems="10"
             android:inputType="number" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="개월" />
+            android:text="@string/month" />
     </LinearLayout>
+
     <Button
         android:id="@+id/btn_main_cal"
-        android:text="계산"
+        android:text="@string/cal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 

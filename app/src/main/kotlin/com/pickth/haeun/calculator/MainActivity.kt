@@ -15,8 +15,14 @@ class MainActivity : AppCompatActivity() {
             val month = et_main_month.text.toString().toInt()
             val won = et_main_won.text
             val per = et_main_per.text
+            if (sw_type.isChecked){
+                //정기예금
+                Toast.makeText(this, "정기예금 ${month+month}월 ${won}원 ${per}%", Toast.LENGTH_LONG).show()
+            }else{
+                //정기적금
+                Toast.makeText(this, "정기적금 ${month+month}월 ${won}원 ${per}%", Toast.LENGTH_LONG).show()
+            }
 
-            Toast.makeText(this, "${month+month}월 ${won}원 ${per}%", Toast.LENGTH_SHORT).show()
         }
     }
 }
